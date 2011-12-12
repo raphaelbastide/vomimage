@@ -1,0 +1,28 @@
+
+button { background: none; border: none; margin: 0; padding: 0; font-size: 0; line-height: 0; width: auto; overflow: visible; }
+
+#feed{
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    z-index: 1000;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    margin-top: -40px;
+    margin-left: -40px;
+    background: black;
+    color: white;
+    font-size: 40px;
+}
+#feed:hover{
+    color: #eee;
+    }
+#feed:active{
+    top: 50.2%;
+    }
+
+img{
+    position: absolute;
+    max-width:200px;
+}
