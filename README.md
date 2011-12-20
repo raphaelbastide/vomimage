@@ -7,11 +7,11 @@ Vomimage reads, displays and load the content of an image folder simlpy by click
 
 ### Params
 In vomimage.js
-bunch // Number of images called on click
-maxRound // Maximum click number before hiding first images
-fadeInSpeed
-fadeOutSpeed
-hideOnDblclick // Hide on double click
-customImgSize // If true, define a custom size for images
-mimgw // Maximum image width 
-mimgh // Maximum image height
+- bunch // Number of images called on click
+- maxRound // Maximum click number before hiding first images
+- fadeInSpeed
+- fadeOutSpeed
+- hideOnDblclick // Hide on double click
+- customImgSize // If true, define a custom size for images
+- mimgw // Maximum image width 
+- mimgh // Maximum image height
