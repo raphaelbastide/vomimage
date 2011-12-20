@@ -3,10 +3,12 @@
 
         var bunch    = 4, // Number of images called on click
             maxRound = 5, // Maximum click number before hiding first images
-            fadeInSpeed = 300,
+            fadeInSpeed  = 300,
             fadeOutSpeed = 300,
-            imgw = 200, // Maximum image width 
-            imgh = 200; // Maximum image height
+            hideOnDblclick = true, // Hide on double click
+            customImgSize  = false, // If true, define a custom size for images
+                mimgw = 200, // Maximum image width 
+                mimgh = 200; // Maximum image height
 
         // Initialisation
         $('#vomimage img:not([src])').hide();
@@ -19,9 +21,17 @@
             doch = $window.height();
         allImg.each(function() {
             var $this = $(this);
-            $this.css({'max-width':imgw+'px','max-height':imgh+'px'});
-            posx = ((Math.random() * (docw - imgw)-40).toFixed());
-            posy = ((Math.random() * (doch - imgh)+ 40).toFixed());
+            if (customImgSize) {
+                $this.removeAttr('width').removeAttr('height');
+                $this.css({'max-width':mimgw+'px','max-height':mimgh+'px'});
+                posx = ((Math.random() * (docw - mimgw)-40).toFixed());
+                posy = ((Math.random() * (doch - mimgh)+ 40).toFixed());
+            }else{
+                imgw = $this.attr('width');
+                imgh = $this.attr('height');
+                posx = ((Math.random() * (docw - imgw)-40).toFixed());
+                posy = ((Math.random() * (doch - imgh)+ 40).toFixed());
+            }
             $this.css({
                 'left':posx+'px',
                 'top':posy+'px'
@@ -48,6 +58,11 @@
                     im.addClass('hidden');
                 }
             }
+        });
+
+        // Hide on double click
+        allImg.dblclick(function(){
+           $(this).hide();
         });
     });
 })(jQuery);

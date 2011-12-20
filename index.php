@@ -11,15 +11,15 @@
     <div id="feedholder"><button id="feed">+</button></div>
     <div id="vomimage">
     <?php
-    $directory = "../../images/*/";
+    $directory = "images/*/";
     $images = glob("" . $directory . "*.*");
     $imgs = '';
     foreach($images as $image){ $imgs[] = "$image"; }
     
     $imgs = array_slice($imgs, 0, 9999);
-    
     foreach ($imgs as $img) {
-        echo "<img data-src='$img' /> \n";
+        list($width, $height, $type, $attr)= getimagesize($img); 
+        echo "<img data-src='$img' width='$width' height='$height' /> \n";
     }
     ?>
     </div>
