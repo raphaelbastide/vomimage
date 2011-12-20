@@ -11,15 +11,16 @@
     <div id="feedholder"><button id="feed">+</button></div>
     <div id="vomimage">
     <?php
-        $directory = "images/*";
-        $images = glob("" . $directory . "*.*");
-        $imgs = '';
-        foreach($images as $image){ $imgs[] = "$image"; }
-        
-        $imgs = array_slice($imgs, 0, 999);
-        foreach ($imgs as $img) {
-            echo "<img data-src='$img' /> \n";
-        }
+    $directory = "../../images/*/";
+    $images = glob("" . $directory . "*.*");
+    $imgs = '';
+    foreach($images as $image){ $imgs[] = "$image"; }
+    
+    $imgs = array_slice($imgs, 0, 9999);
+    
+    foreach ($imgs as $img) {
+        echo "<img data-src='$img' /> \n";
+    }
     ?>
     </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js" type="text/javascript" charset="utf-8"></script>
