@@ -6,7 +6,7 @@ Junk image gallery.
 Vomimage reads, displays and load the content of an image folder simlpy by clicking on a fat button. This project needs to be cleaned but works fine.
 
 ## Customize
-Chose the directory you want to browse images from in index.php
+In index.php change the directory you want to browse images from
 
     $directory = "images/";
 
