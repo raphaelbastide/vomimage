@@ -7,6 +7,7 @@ Vomimage reads, displays and load the content of an image folder simlpy by click
 
 ## Customize
 Chose the directory you want to browse images from in index.php
+
     $directory = "images/";
 
 ### Params
