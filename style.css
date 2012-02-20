@@ -1,5 +1,7 @@
 body#vomimage{
     overflow:hidden;
+    margin:0;
+    padding:0;
 }
 button {
     background: none;
@@ -34,4 +36,16 @@ button {
     }
 img{
     position: absolute;
+}
+p{
+    position:fixed;
+    right:15px;
+    bottom:15px;
+    font-family:arial;
+    letter-spacing:1px;
+    font-size:12px;
+    margin:0;
+}
+a{
+    color:black;
 }

@@ -19,8 +19,12 @@ In vomimage.js
 - fadeOutSpeed
 - hideOnDblclick // Hide on double click
 - imgRotation // If true, images are displayed with a angle
-- customImgSize // If true, define a custom size for images
 - endText // Text displayed when list is over
+- customImgSize // If true, define a custom size for images
  - mimgw // Maximum image width 
  - mimgh // Maximum image height
  - enlargeOnClick
+
+## License
+
+This project is under <a href="http://raphael.mit-license.org/">MIT License</a>
