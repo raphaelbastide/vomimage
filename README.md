@@ -13,13 +13,13 @@ In index.php change the directory you want to browse images from
 ### Params
 In vomimage.js
 
-bunch // Number of images called on click
-maxRound // Maximum click number before hiding first images
-fadeInSpeed
-fadeOutSpeed
-hideOnDblclick // Hide on double click
-imgRotation // If true, images are displayed with a angle
-customImgSize // If true, define a custom size for images
-mimgw // Maximum image width 
-mimgh // Maximum image height
-enlargeOnClick
+- bunch // Number of images called on click
+- maxRound // Maximum click number before hiding first images
+- fadeInSpeed
+- fadeOutSpeed
+- hideOnDblclick // Hide on double click
+- imgRotation // If true, images are displayed with a angle
+- customImgSize // If true, define a custom size for images
+ - mimgw // Maximum image width 
+ - mimgh // Maximum image height
+ - enlargeOnClick
