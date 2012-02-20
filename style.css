@@ -1,6 +1,16 @@
-
-button { background: none; border: none; margin: 0; padding: 0; font-size: 0; line-height: 0; width: auto; overflow: visible; }
-
+body#vomimage{
+    overflow:hidden;
+}
+button {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+    width: auto;
+    overflow: visible;
+}
 #feed{
     position: fixed;
     width: 80px;
@@ -11,6 +21,7 @@ button { background: none; border: none; margin: 0; padding: 0; font-size: 0; li
     left: 50%;
     margin-top: -40px;
     margin-left: -40px;
+    padding 0 0 5px 0
     background: black;
     color: white;
     font-size: 40px;
@@ -21,7 +32,6 @@ button { background: none; border: none; margin: 0; padding: 0; font-size: 0; li
 #feed:active{
     top: 50.2%;
     }
-
 img{
     position: absolute;
 }

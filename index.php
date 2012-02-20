@@ -6,12 +6,15 @@
     <title>vomimage</title>
     <link rel="alternate" type="application/atom+xml" href="@root_path/?/feed/">
     <link rel="stylesheet" href="style.css" type="text/css" media="screen"> 
+    <!-- 
+        Vomimage is open source, fork it at http://github.com/raphaelbastide/Vomimage/
+    -->
   </head>
-  <body>
+  <body id="vomimage">
     <div id="feedholder"><button id="feed">+</button></div>
-    <div id="vomimage">
+    <div>
     <?php
-    $directory = "images/*/";
+    $directory = "/images/*/";
     $images = glob("" . $directory . "*.*");
     $imgs = '';
     foreach($images as $image){ $imgs[] = "$image"; }
