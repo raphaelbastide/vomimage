@@ -20,6 +20,7 @@ In vomimage.js
 - hideOnDblclick // Hide on double click
 - imgRotation // If true, images are displayed with a angle
 - customImgSize // If true, define a custom size for images
+- endText // Text displayed when list is over
  - mimgw // Maximum image width 
  - mimgh // Maximum image height
  - enlargeOnClick

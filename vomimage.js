@@ -8,6 +8,7 @@
             hideOnDblclick = false, // Hide on double click
             imgRotation  = true, // If true, images are displayed with a angle
             customImgSize  = true, // If true, define a custom size for images
+            endText = 'FIN', // Text displayed when list is over
                 mimgw = 200, // Maximum image width 
                 mimgh = 200; // Maximum image height
                 enlargeOnClick = true;
@@ -17,7 +18,6 @@
         var allImg = $('#vomimage img');
         allImg.draggable();
 
-		
         // Images position
         var $window = $(window),
             docw = $window.width(),
@@ -79,6 +79,11 @@
                 dsrc = im.attr('data-src');
                 im.attr('src', dsrc);
                 im.fadeIn(fadeInSpeed);
+                console.log(im);
+            }
+            // Is it the end ?
+            if (0 === im.length){
+                $('#feed').html(endText).addClass('fin');
             }
             j++;
             if (j >= maxRound){
@@ -89,7 +94,7 @@
                 }
             }
         });
-
+        
         // Hide on double click
         if (hideOnDblclick){
             allImg.dblclick(function(){
