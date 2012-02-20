@@ -1,13 +1,13 @@
 # Vomimage
 
-Junk image gallery.
+Punk image gallery.
 
 ## How it works
 Vomimage reads, displays and load the content of an image folder simlpy by clicking on a fat button. This project needs to be cleaned but works fine.
 
 ## Demo
 
-You can <a href="http://lab.raphaelbastide.com/tools/vomimage/demo/">try Vomimage online</a>.
+You can <a href="http://lab.raphaelbastide.com/tools/vomimage/demo/">try vomimage online</a>.
 
 ## Customize
 In index.php change the directory you want to browse images from
