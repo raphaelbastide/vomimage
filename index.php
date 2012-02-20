@@ -14,7 +14,7 @@
     <div id="feedholder"><button id="feed">+</button></div>
     <div>
     <?php
-    $directory = "/images/*/";
+    $directory = "images/";
     $images = glob("" . $directory . "*.*");
     $imgs = '';
     foreach($images as $image){ $imgs[] = "$image"; }
