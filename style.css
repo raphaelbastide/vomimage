@@ -21,9 +21,9 @@ button {
     left: 50%;
     margin-top: -40px;
     margin-left: -40px;
-    padding 0 0 5px 0
-    background: black;
+    padding 0 0 5px 0;
     color: white;
+    background: #000;
     font-size: 40px;
 }
 #feed:hover{

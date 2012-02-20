@@ -1,16 +1,16 @@
 (function($){
     $(document).ready(function() {
 
-        var bunch    = 4, // Number of images called on click
-            maxRound = 5, // Maximum click number before hiding first images
+        var bunch    = 2, // Number of images called on click
+            maxRound = 3, // Maximum click number before hiding first images
             fadeInSpeed  = 300,
             fadeOutSpeed = 300,
-            hideOnDblclick = true, // Hide on double click
+            hideOnDblclick = false, // Hide on double click
             imgRotation  = true, // If true, images are displayed with a angle
             customImgSize  = true, // If true, define a custom size for images
                 mimgw = 200, // Maximum image width 
                 mimgh = 200; // Maximum image height
-                enlargeOnClick = false;
+                enlargeOnClick = true;
 
         // Initialisation
         $('#vomimage img:not([src])').hide();
@@ -74,7 +74,7 @@
             var emptyImg = $('#vomimage img:not([src])');
             var visibleImg = $('#vomimage img:[src]');
             var vImg = visibleImg.not('.hidden');
-            for (var i=0; i < 4; i++) {
+            for (var i=0; i < bunch; i++) {
                 im = $(emptyImg[i]);
                 dsrc = im.attr('data-src');
                 im.attr('src', dsrc);

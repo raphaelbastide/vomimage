@@ -11,15 +11,23 @@
     -->
   </head>
   <body id="vomimage">
-    <div id="feedholder"><button id="feed">+</button></div>
+    <div id="feedholder">
+        <button id="feed">+</button>
+    </div>
     <div>
     <?php
+    // Directory where images are
     $directory = "images/";
-    $images = glob("" . $directory . "*.*");
+
+    $images = glob($directory."{*.jpg,*.jpeg,*.gif,*.png,*.svg}", GLOB_BRACE);
     $imgs = '';
     foreach($images as $image){ $imgs[] = "$image"; }
     
-    $imgs = array_slice($imgs, 0, 9999);
+    // Creating an array with images
+    $imgs = array_slice($imgs, 0, 9999, $preserve_keys = true );
+    // Sorting the array
+    sort($imgs);
+    // Writing an img tag with respective height and width
     foreach ($imgs as $img) {
         list($width, $height, $type, $attr)= getimagesize($img); 
         echo "<img data-src='$img' width='$width' height='$height' /> \n";
@@ -27,7 +35,7 @@
     ?>
     </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="vomimage.js" type="text/javascript" charset="utf-8"></script>
   </body>
 </html>
