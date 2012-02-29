@@ -3,11 +3,16 @@
 Punk image gallery.
 
 ## How it works
-Vomimage reads, displays and load the content of an image folder simlpy by clicking on a fat button. This project needs to be cleaned but works fine.
+Vomimage reads, displays and loads the content of an image folder. User just need to click on a fat button.
 
 ## Demo
 
 You can <a href="http://lab.raphaelbastide.com/tools/vomimage/demo/">try vomimage online</a>.
+
+## Requirement
+
+- PHP5
+- Vomimage doesn't need any database
 
 ## Customize
 In index.php change the directory you want to browse images from
