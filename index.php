@@ -18,23 +18,20 @@
     <?php
     // Directory where images are
     $directory = "images/";
-
-    $images = glob($directory."{*.jpg,*.jpeg,*.gif,*.png,*.svg}", GLOB_BRACE);
-    $imgs = '';
-    foreach($images as $image){ $imgs[] = "$image"; }
     
-    // Creating an array with images
-    $imgs = array_slice($imgs, 0, 9999, $preserve_keys = true );
+    $images = glob($directory."{*.jpg,*.jpeg,*.gif,*.png,*.svg}", GLOB_BRACE);
+    
     // Sorting the array
-    sort($imgs);
+    natsort($images);
+    
     // Writing an img tag with respective height and width
-    foreach ($imgs as $img) {
+    foreach ($images as $img) {
         list($width, $height, $type, $attr)= getimagesize($img); 
         echo "<img data-src='$img' width='$width' height='$height' /> \n";
     }
     ?>
     <p>
-            <a href="https://github.com/raphaelbastide/vomimage">Source and doc are on Github</a>
+        <a href="https://github.com/raphaelbastide/vomimage">Source and doc</a>
     </p>
     </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js" type="text/javascript" charset="utf-8"></script>
