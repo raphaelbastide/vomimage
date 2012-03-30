@@ -3,7 +3,7 @@
 Punk image gallery.
 
 ## How it works
-Vomimage reads, displays and loads the content of an image folder. User just need to click on a fat button.
+Vomimage reads, displays and loads the content of an image folder. User just needs to click on a fat button.
 
 ## Demo
 
