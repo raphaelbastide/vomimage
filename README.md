@@ -34,6 +34,11 @@ In vomimage.js
  - mimgh // Maximum image height
  - enlargeOnClick
 
+## In use
+
+* [http://nicolaschoye.com/blog/](http://nicolaschoye.com/blog/)
+* [http://lab.raphaelbastide.com/tools/vomimage/](http://lab.raphaelbastide.com/tools/vomimage/)
+
 ## License
 
 This project is under <a href="http://raphael.mit-license.org/">MIT License</a>
