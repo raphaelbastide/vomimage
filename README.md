@@ -37,6 +37,7 @@ In vomimage.js
 ## In use
 
 * [http://aude-debout.fr/shoes/](http://aude-debout.fr/shoes/)
+* [http://afk.spintank.fr/](http://afk.spintank.fr/)
 * [http://nicolaschoye.com/blog/](http://nicolaschoye.com/blog/)
 * [http://lab.raphaelbastide.com/tools/vomimage/](http://lab.raphaelbastide.com/tools/vomimage/)
 
